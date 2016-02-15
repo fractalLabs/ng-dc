@@ -30,7 +30,7 @@ angular
         templateUrl: 'views/dashboard.html'
         controller: 'DgmCtrl'
       .when '/apf',
-        templateUrl: 'views/dashboard.html'
+        templateUrl: 'views/apf.html'
         controller: 'ApfCtrl'
       .when '/about',
         templateUrl: 'views/about.html'

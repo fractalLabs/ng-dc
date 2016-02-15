@@ -12,7 +12,7 @@ angular.module 'ngDcApp'
     $scope.widgets = []
     console.log "hola"
 
-    $scope.expr = '(db-find :data-core {:destino "Dashboard DA"})'
+    $scope.expr = '(db-find :data-core {:destino "Dashboard DA" :value {$exists true}})'
     Clj.evalClojure($scope.expr)
 
     $scope.widgets = Clj.getReturn().jresult
