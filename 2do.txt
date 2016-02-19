@@ -1,0 +1,4 @@
+Widgets distintos: segun el tipo de dato despliega el content del widgets
+Widget word cloud
+widget lista
+widget iframe
