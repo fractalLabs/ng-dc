@@ -16,7 +16,8 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'angular-loading-bar'
+    'angular-loading-bar',
+    'angular-jqcloud'
   ]
   .config ($routeProvider) ->
     $routeProvider
@@ -39,3 +40,7 @@ angular
         controllerAs: 'about'
       .otherwise
         redirectTo: '/'
+  .directive 'nube', () ->
+    template: '<jqcloud words="words" width="500" height="350" steps="7"></jqcloud>'
+    controller: 'NubeCtrl'
+    #scope: words: '@'
