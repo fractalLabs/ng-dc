@@ -9,4 +9,3 @@
 ###
 angular.module 'ngDcApp'
   .controller 'MainCtrl',  ($scope) ->
-    $scope.words = [{"weight": 2, "text": "hola"}]
