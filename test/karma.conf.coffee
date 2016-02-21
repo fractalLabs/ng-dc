@@ -34,6 +34,8 @@ module.exports = (config) ->
       'bower_components/angular-nvd3/dist/angular-nvd3.js'
       'bower_components/Chart.js/Chart.js'
       'bower_components/angular-chart.js/dist/angular-chart.js'
+      'bower_components/javascript-detect-element-resize/detect-element-resize.js'
+      'bower_components/angular-gridster/src/angular-gridster.js'
       'bower_components/angular-mocks/angular-mocks.js'
       # endbower
       # bower:coffee

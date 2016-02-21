@@ -19,7 +19,8 @@ angular
     'angular-loading-bar',
     'angular-jqcloud',
     'nvd3',
-    'chart.js'
+    'chart.js',
+    'gridster'
   ]
   .config ($routeProvider) ->
     $routeProvider
@@ -43,9 +44,8 @@ angular
       .when '/opinionpublica',
         templateUrl: 'views/opinionpublica.html'
         controller: 'OpinionpublicaCtrl'
+      .when '/dash',
+        templateUrl: 'views/dash.html'
+        controller: 'DashCtrl'
       .otherwise
         redirectTo: '/'
-  .directive 'nube', () ->
-    template: '<jqcloud words="words" width="500" height="350" steps="7"></jqcloud>'
-    controller: 'NubeCtrl'
-    ##iscope: words: '@'

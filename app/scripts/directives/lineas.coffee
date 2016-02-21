@@ -11,10 +11,10 @@ angular.module 'ngDcApp'
     restrict: 'EA'
     controller: 'LineasCtrl'
     scope:
-      datos: '='
-    template: '<canvas id="line" class="chart chart-line" chart-data="data"
-  chart-labels="labels" chart-legend="true" chart-series="series"
+      data: '='
+    template: '<canvas id="line" class="chart chart-line" chart-data="data.data"
+  chart-labels="data.labels" chart-legend="true" chart-series="data.series"
   chart-click="onClick">
                </canvas>'
-    link: ($scope, element, attrs) ->
-      console.log 'test', $scope.datos
+    #link: ($scope, element, attrs) ->
+    #  console.log 'test', $scope.datos
