@@ -32,6 +32,8 @@ module.exports = (config) ->
       'bower_components/d3/d3.js'
       'bower_components/nvd3/build/nv.d3.js'
       'bower_components/angular-nvd3/dist/angular-nvd3.js'
+      'bower_components/Chart.js/Chart.js'
+      'bower_components/angular-chart.js/dist/angular-chart.js'
       'bower_components/angular-mocks/angular-mocks.js'
       # endbower
       # bower:coffee

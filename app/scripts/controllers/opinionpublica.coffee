@@ -52,7 +52,7 @@ angular.module 'ngDcApp'
         key: 'Two'
         y: 2
       }]
-
+    $scope.datos = "hola"
     #currently not working
     $scope.areachart = 'chart':
       'type': 'stackedAreaChart'

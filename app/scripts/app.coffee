@@ -18,7 +18,8 @@ angular
     'ngTouch',
     'angular-loading-bar',
     'angular-jqcloud',
-    'nvd3'
+    'nvd3',
+    'chart.js'
   ]
   .config ($routeProvider) ->
     $routeProvider
