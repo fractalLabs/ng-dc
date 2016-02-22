@@ -3,7 +3,7 @@
 angular.module 'ngDcApp'
   .directive 'pie', ->
     controller: 'PieCtrl'
-    template: '<nvd3 options="options" data="data"></nvd3>'
+    templateUrl: 'views/pie.html'
     scope:
       data: '='
     #link: (scope, element, attrs) ->
