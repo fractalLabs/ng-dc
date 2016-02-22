@@ -1,4 +1,6 @@
 <!-- {{data.data}} -->
+<div ng-class="classFn(data.id)"></div>
+<div class="w-3"></div>
 <div ng-if="!data.type"><h1>{{data.data}}</h1></div>
 <div ng-if="data.type == 'nube'"><nube words="data.data" /></div>
 <div ng-if="data.type == 'lineas'"><lineas data="data.data"></lineas></div>
