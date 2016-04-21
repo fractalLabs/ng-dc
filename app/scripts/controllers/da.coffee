@@ -23,6 +23,13 @@ angular.module 'ngDcApp'
         $scope.refresh = false
       ), 0
 
+    $scope.inIframe = ->
+      try window.self != window.top
+      catch e then true
+
+    if $scope.inIframe()
+      document.getElementById("header").style.visibility="hidden";
+      document.getElementById("footer").style.visibility="hidden";
     $scope.$watch(
       -> Clj.getReturn(),
       (newReturn) ->
