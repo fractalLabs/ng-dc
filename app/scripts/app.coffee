@@ -24,11 +24,11 @@ angular
   ]
   .config ($routeProvider) ->
     $routeProvider
-      .when '/',
-        templateUrl: 'views/main.html'
-        controller: 'MainCtrl'
-        controllerAs: 'main'
-      .when '/da',
+      #.when '/',
+      #  templateUrl: 'views/main.html'
+      #  controller: 'MainCtrl'
+      #  controllerAs: 'main'
+      .when '/',  #.when '/da',
         templateUrl: 'views/dashboard.html'
         controller: 'DaCtrl'
       .when '/dgm',
